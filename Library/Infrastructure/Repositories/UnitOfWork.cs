@@ -21,6 +21,8 @@ public class UnitOfWork : IUnitOfWork
         Borrows = new BorrowRepository(context);
         Fines = new FineRepository(context);
         Roles = new RoleRepository(context);
+        Categories = new CategoryRepository(context);
+        Reservations = new ReservationRepository(context);
     }
 
     public IPersonRepository People { get; }
@@ -32,6 +34,8 @@ public class UnitOfWork : IUnitOfWork
     public IBorrowRepository Borrows { get; }
     public IFineRepository Fines { get; }
     public IRoleRepository Roles { get; }
+    public ICategoryRepository Categories { get; }
+    public IReservationRepository Reservations { get; }
 
     public async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {
