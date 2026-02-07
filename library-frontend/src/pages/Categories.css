@@ -1,0 +1,35 @@
+.categories-page h1 {
+  margin-bottom: 1rem;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
+.category-card {
+  padding: 1rem;
+  background: var(--card-bg, #252d3a);
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  border: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.category-card:hover {
+  border-color: #2d6a4f;
+}
+
+.category-card .name {
+  font-weight: 600;
+}
+
+.category-card .count {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}

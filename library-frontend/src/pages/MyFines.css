@@ -1,0 +1,49 @@
+.my-fines-page h1 {
+  margin-bottom: 1rem;
+}
+
+.my-fines-page .total {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.fines-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.fine-card {
+  padding: 1rem;
+  background: var(--card-bg, #252d3a);
+  border-radius: 10px;
+  border: 1px solid #444;
+}
+
+.fine-card.paid {
+  opacity: 0.7;
+}
+
+.fine-card h3 {
+  margin: 0 0 0.5rem;
+}
+
+.fine-card p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.fine-card .badge.success {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  background: #2d6a4f;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.fine-card .btn {
+  margin-top: 0.75rem;
+}

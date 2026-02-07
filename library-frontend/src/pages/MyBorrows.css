@@ -1,0 +1,53 @@
+.my-borrows-page h1 {
+  margin-bottom: 1rem;
+}
+
+.borrows-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.borrow-card {
+  padding: 1rem;
+  background: var(--card-bg, #252d3a);
+  border-radius: 10px;
+  border: 1px solid #444;
+}
+
+.borrow-card.overdue {
+  border-color: #9d0208;
+  background: rgba(157, 2, 8, 0.08);
+}
+
+.borrow-card h3 {
+  margin: 0 0 0.5rem;
+}
+
+.borrow-card p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.borrow-card .badge {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  background: #9d0208;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.borrow-card .btn {
+  margin-top: 0.75rem;
+}
+
+.my-borrows-page .message.error {
+  padding: 0.5rem 0.75rem;
+  background: rgba(157, 2, 8, 0.2);
+  border: 1px solid #9d0208;
+  border-radius: 6px;
+  color: #ff6b6b;
+  margin-bottom: 1rem;
+}

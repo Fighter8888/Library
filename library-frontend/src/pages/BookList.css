@@ -1,0 +1,70 @@
+.book-list-page h1 {
+  margin-bottom: 1rem;
+}
+
+.search-bar {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.search-bar input,
+.search-bar select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: var(--input-bg, #1a2332);
+  color: inherit;
+  min-width: 140px;
+}
+
+.search-bar input:focus,
+.search-bar select:focus {
+  outline: none;
+  border-color: #2d6a4f;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.book-card {
+  padding: 1rem;
+  background: var(--card-bg, #252d3a);
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid transparent;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.book-card:hover {
+  border-color: #2d6a4f;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.book-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.book-card .meta {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.book-card .categories {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  color: #52b788;
+}
+
+.book-card .copies {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
